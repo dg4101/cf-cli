@@ -17,4 +17,4 @@ if [ -n "$INPUT_CF_ORG" ] && [ -n "$INPUT_CF_SPACE" ]; then
 fi
 
 
-sh -c "pwd;cf $*"
+sh -c "pwd;cd ..;pwd;find .|grep cf;cf $*"
