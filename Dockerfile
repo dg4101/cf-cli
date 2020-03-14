@@ -1,9 +1,9 @@
 FROM ubuntu:18.04
 
 RUN apt-get update
-RUN apt-get install -y ca-certificates jq git
+RUN apt-get install -y ca-certificates jq git curl
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x -o /nodesource_setup.sh
+RUN curl -sL --insecure https://deb.nodesource.com/setup_10.x -o /nodesource_setup.sh
 RUN chmod 755 /nodesource_setup.sh
 RUN /nodesource_setup.sh
 
