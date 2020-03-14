@@ -1,8 +1,14 @@
 #!/bin/sh -l
 pwd
+echo git version
 git --version
-echo ====================
+echo yarn version
 yarn --version
+echo node version
+node --version
+echo npm version
+npm --version
+
 git clone https://github.com/dg4101/covid19.git
 cd ./covid19
 yarn dev
