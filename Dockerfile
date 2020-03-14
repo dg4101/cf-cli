@@ -19,7 +19,7 @@ WORKDIR /tmg/covid19
 RUN pwd
 RUN find .
 RUN yarn install
-RUN yarn dev
+#RUN yarn dev
 
 RUN which cf;nodejs -v
 ADD entrypoint.sh /entrypoint.sh
