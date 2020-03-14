@@ -20,4 +20,4 @@ mv ./covid19/cf/manifest.yaml ./
 
 pwd
 find .
-cf $*"
+cf $*
