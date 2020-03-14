@@ -1,3 +1,3 @@
 #!/bin/sh -l
-echo test
-tail -f /dev/null
+echo Starting cf-cli container
+#tail -f /dev/null
