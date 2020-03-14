@@ -4,8 +4,9 @@ RUN apt-get update
 RUN apt-get install -y ca-certificates jq git
 
 RUN echo "deb [trusted=yes] https://packages.cloudfoundry.org/debian stable main" > /etc/apt/sources.list.d/cloudfoundry-cli.list
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main"  > /etc/apt/sources.list.d/yarn-cli.list
 RUN apt-get update
-RUN apt-get install -y cf-cli
+RUN apt-get install -y cf-cli yarn
 
 RUN which cf
 ADD entrypoint.sh /entrypoint.sh
