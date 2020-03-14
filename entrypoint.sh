@@ -1,6 +1,7 @@
 #!/bin/sh -l
 pwd
 git --version
+echo ====================
 yarn --version
 git clone https://github.com/dg4101/covid19.git
 cd ./covid19
