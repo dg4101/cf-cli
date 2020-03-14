@@ -4,7 +4,8 @@ git --version
 git clone https://github.com/dg4101/covid19.git
 cd ./covid19
 git checkout dev-scp
-cf --version
+
+find ./covid19
 echo ====================
 cf --version
 
