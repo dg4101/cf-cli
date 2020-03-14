@@ -26,5 +26,7 @@ fi
 cd /tmg
 mv ./covid19/cf/manifest.yaml ./
 
+find .
+
 pwd
 cf push stopcovid19 -f manifest.yaml -p covid19 -c "yarn dev"
