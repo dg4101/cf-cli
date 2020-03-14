@@ -18,4 +18,4 @@ fi
 cd ..
 cp ./covid19/cf/manifest.yaml ./
 
-sh -c ";pwd;find .|grep cf;cf $*"
+sh -c "pwd;find .|grep cf;cf $*"
