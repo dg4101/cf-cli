@@ -3,8 +3,11 @@ FROM ubuntu:18.04
 RUN apt-get update
 RUN apt-get install -y ca-certificates jq git
 
+RUN curl -sL https://deb.nodesource.com/setup_10.x -o /nodesource_setup.sh
+RUN chmod 755 /nodesource_setup.sh
+RUN /nodesource_setup.sh
+
 RUN echo "deb [trusted=yes] https://packages.cloudfoundry.org/debian stable main" > /etc/apt/sources.list.d/cloudfoundry-cli.list
-RUN echo "deb [trusted=yes] https://dl.yarnpkg.com/debian/ stable main"  > /etc/apt/sources.list.d/yarn-cli.list
 RUN echo "deb [trusted=yes] https://dl.yarnpkg.com/debian/ stable main"  > /etc/apt/sources.list.d/yarn-cli.list
 RUN apt-get update
 RUN apt-get install -y cf-cli yarn nodejs npm
