@@ -16,6 +16,6 @@ if [ -n "$INPUT_CF_ORG" ] && [ -n "$INPUT_CF_SPACE" ]; then
   cf target -o "$INPUT_CF_ORG" -s "$INPUT_CF_SPACE"
 fi
 cd ..
-cp ./covid19/cf/manifest.yaml ./
+mv ./covid19/cf/manifest.yaml ./
 
 sh -c "pwd;find .|grep manifest;find .|grep lock;cf $*"
