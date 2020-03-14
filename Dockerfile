@@ -15,7 +15,7 @@ RUN apt-get install -y cf-cli yarn
 RUN mkdir -p /tmg
 WORKDIR /tmg
 RUN git clone https://github.com/dg4101/covid19.git
-RUN cd ./covid19
+WORKDIR /tmg/covid19
 RUN pwd
 RUN find .
 RUN yarn install
