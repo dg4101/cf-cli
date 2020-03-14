@@ -21,7 +21,7 @@ inputs:
     required: false
   command:
     description: "Command to run using CF CLI"
-    required: true
+    required: false
 runs:
   using: "docker"
   image: "Dockerfile"
