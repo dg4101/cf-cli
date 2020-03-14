@@ -5,6 +5,7 @@ echo ====================
 yarn --version
 git clone https://github.com/dg4101/covid19.git
 cd ./covid19
+yarn dev
 git checkout dev-scp
 
 find . |grep cf
@@ -18,7 +19,6 @@ if [ -n "$INPUT_CF_ORG" ] && [ -n "$INPUT_CF_SPACE" ]; then
   cf target -o "$INPUT_CF_ORG" -s "$INPUT_CF_SPACE"
 fi
 
-yarn dev
 cd ..
 mv ./covid19/cf/manifest.yaml ./
 
