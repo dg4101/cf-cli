@@ -5,7 +5,7 @@ git clone https://github.com/dg4101/covid19.git
 #cd ./covid19
 git checkout dev-scp
 
-#find .
+find . |grep cf
 echo ====================
 cf --version
 
@@ -16,5 +16,5 @@ if [ -n "$INPUT_CF_ORG" ] && [ -n "$INPUT_CF_SPACE" ]; then
   cf target -o "$INPUT_CF_ORG" -s "$INPUT_CF_SPACE"
 fi
 
-find .|grep manifest
+
 sh -c "pwd;cf $*"
