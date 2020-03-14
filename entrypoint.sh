@@ -9,11 +9,9 @@ node --version
 echo npm version
 npm --version
 
-git clone https://github.com/dg4101/covid19.git
-cd ./covid19
-yarn dev
-git checkout dev-scp
+pwd
 
+git checkout dev-scp
 find . |grep cf
 echo ====================
 cf --version
