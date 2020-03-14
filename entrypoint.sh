@@ -23,7 +23,7 @@ if [ -n "$INPUT_CF_ORG" ] && [ -n "$INPUT_CF_SPACE" ]; then
   cf target -o "$INPUT_CF_ORG" -s "$INPUT_CF_SPACE"
 fi
 
-cd ..
+cd /tmg
 mv ./covid19/cf/manifest.yaml ./
 
 pwd
