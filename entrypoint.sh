@@ -2,7 +2,7 @@
 pwd
 git --version
 git clone https://github.com/dg4101/covid19.git
-#cd ./covid19
+cd ./covid19
 git checkout dev-scp
 
 find . |grep cf
