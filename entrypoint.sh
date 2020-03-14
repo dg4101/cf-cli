@@ -9,7 +9,7 @@ node --version
 echo npm version
 npm --version
 
-cd ./covid19
+cd /tmg/covid19
 pwd
 
 git checkout dev-scp
