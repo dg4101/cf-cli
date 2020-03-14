@@ -13,6 +13,8 @@ RUN apt-get update
 RUN apt-get install -y cf-cli yarn
 RUN git clone https://github.com/dg4101/covid19.git
 RUN cd ./covid19
+RUN pwd
+RUN find .
 RUN yarn install
 RUN yarn dev
 
