@@ -8,7 +8,7 @@ git clone "$INPUT_GIT_REPO"
 cd /tmg/covid19
 
 echo ====================
-git checkout dev-scp
+git checkout master
 find . |grep cf
 mv ./cf/manifest-html.yaml /tmg/
 
