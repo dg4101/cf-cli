@@ -9,8 +9,7 @@ RUN apt-get install -y cf-cli
 
 RUN mkdir -p /tmg
 WORKDIR /tmg
-#RUN git clone https://github.com/dg4101/covid19.git
-#WORKDIR /tmg/covid19
+
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh
