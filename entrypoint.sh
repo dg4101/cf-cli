@@ -7,10 +7,13 @@ git clone "$INPUT_GIT_REPO"
 
 cd /tmg/covid19
 
-git checkout production
+echo ====================
+git checkout dev-scp
 find . |grep cf
 mv ./cf/manifest-html.yaml /tmg/
 
+git checkout production
+find . |grep index.html
 zip -r production.zip ./
 
 echo ====================
