@@ -19,6 +19,9 @@ inputs:
   cf_space:
     description: "Target Space"
     required: false
+  git_repo:
+    description: "git repo of content"
+    required: true
   command:
     description: "Command to run using CF CLI"
     required: false
